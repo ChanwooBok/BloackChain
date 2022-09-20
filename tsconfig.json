@@ -2,6 +2,10 @@
     "include":["src"], // 컴파일 할 영역을 지정한다.-> 모든 src폴더..
     "compilerOptions": {
         "outDir": "build", // 컴파일 결과 폴더이름을 정한다.
-        "target": "ES6" // 컴파일할 자바스크립트 버전을 정한다. ES6는 모든 노드js와 브라우저에 호환가능
+        "target": "ES6", // 컴파일할 자바스크립트 버전을 정한다. ES6는 모든 노드js와 브라우저에 호환가능
+        "lib":["ES6"],
+        "strict":true,
+        "esModuleInterop": true,
+        "module": "CommonJS"
     }
 }
